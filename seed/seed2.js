@@ -2,7 +2,7 @@ var Equipment = require("../models/Equipments");
 
 var mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost/peak-dest-rentals01");
+mongoose.connect('mongodb://<heroku_b4zwwmgx>:<woot1234>@ds117615.mlab.com:17615/heroku_b4zwwmgx');
 
 // Seeds
 var equips = [

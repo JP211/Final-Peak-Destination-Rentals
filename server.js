@@ -15,7 +15,11 @@ app.use(bodyParser.urlencoded({
 
 app.use(express.static("public"));
 
-var db = process.env.MONGODB_URI || 'mongodb://<heroku_b4zwwmgx>:<woot1234>@ds117615.mlab.com:17615/heroku_b4zwwmgx';
+var db = process.env.MONGODB_URI || 'mongodb://<heroku_b4zwwmgx>:<dbpassword>@ds117615.mlab.com:17615/heroku_b4zwwmgx';
+
+
+
+
 
 mongoose.connect(db, function(error) {
 

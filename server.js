@@ -13,7 +13,7 @@ mongoose.Promise = Promise;
 var app = express();
 
 
-var db = process.env.MONGODB_URI || "mongodb://localhost/peak-dest-rentals01";
+var db = process.env.MONGODB_URI || "mongodb://<heroku_b4zwwmgx>:<smugrads2017>@ds117615.mlab.com:17615/heroku_b4zwwmgx";
 
 mongoose.connect(db, function(error) {
 
